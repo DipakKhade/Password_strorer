@@ -63,3 +63,11 @@ padding: 6px;
 .th{
 margin-left: 23px;
 }
+
+
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
