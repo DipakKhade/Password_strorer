@@ -29,19 +29,19 @@
 // updating the table from local storage
 function updateTable() {
     const tableBody = document.getElementById('tableBody')
-    tableBody.innerHTML = '';
+    tableBody.innerHTML = ''
 
     const entries = JSON.parse(localStorage.getItem('passwordEntries')) || []
 
     for (const entry of entries) {
-        const row = tableBody.insertRow();
-        const siteCell = row.insertCell(0);
-        const usernameCell = row.insertCell(1);
-        const passwordCell = row.insertCell(2);
+        const row = tableBody.insertRow()
+        const siteCell = row.insertCell(0)
+        const usernameCell = row.insertCell(1)
+        const passwordCell = row.insertCell(2)
 
-        siteCell.innerHTML = entry.site;
-        usernameCell.innerHTML = entry.username;
-        passwordCell.innerHTML = entry.password;
+        siteCell.innerHTML = entry.site
+        usernameCell.innerHTML = entry.username
+        passwordCell.innerHTML = entry.password
     }
 }
 
